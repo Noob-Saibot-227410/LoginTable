@@ -36,6 +36,65 @@ Com o padrão MVC, o código fica mais organizado e fácil de manter, além de f
 
 Para executar o projeto, basta abrir o arquivo index.html no seu navegador. A partir daí, você será direcionado para a tela de login, onde poderá fazer login na aplicação. Após fazer login, você será redirecionado para a tela principal, onde poderá adicionar itens à tabela e visualizar os itens que já foram adicionados.
 
+<h2>Para utilizar o projeto local, mega simples, siga os seguintes passos:</h2>
+
+Faça o download ou clone o repositório do projeto para o seu computador.
+Abra o arquivo index.html em um navegador de sua escolha.
+Será exibida a tela de login. Você pode fazer login usando as credenciais de teste fornecidas ou criar sua própria conta.
+Após fazer login, você será redirecionado para a tela principal, onde poderá adicionar itens à tabela e visualizar os itens que já foram adicionados.
+Para adicionar um item à tabela, preencha o formulário na parte superior da tela e clique no botão "Adicionar".
+Para remover um item da tabela, clique no botão "Remover" na linha correspondente ao item que deseja excluir.
+Os itens adicionados na tabela serão salvos na memória local do navegador e persistirão mesmo após o fechamento do navegador.
+Abaixo estão as imagens de ilustração do projeto:
+
+<img src="img/intro1.PNG">
+<img src="img/introIndex.PNG">
+
+<h2>Uso com Dockerfile</h2>
+
+Certifique-se de que o arquivo Dockerfile esteja na raiz do seu projeto.
+
+bash
+
+Copy code
+# Imagem base
+FROM node:latest
+
+# Diretório de trabalho
+WORKDIR /app
+
+# Copia os arquivos do projeto para o diretório de trabalho
+COPY . .
+
+# Instala as dependências
+RUN npm install
+
+# Expõe a porta da aplicação
+EXPOSE 3000
+
+# Comando para iniciar a aplicação
+CMD ["npm", "start"]
+
+## Como usar o Dockerfile
+
+Para executar o aplicativo em um contêiner Docker, siga as instruções abaixo:
+
+1. Certifique-se de ter o Docker instalado em seu computador.
+
+2. Na raiz do projeto, execute o seguinte comando para construir a imagem Docker:
+
+docker build -t login-table .
+
+3. Em seguida, execute o seguinte comando para iniciar o contêiner:
+
+docker run -p 8080:80 login-table
+
+4. Abra o navegador e acesse http://localhost:8080 para visualizar o aplicativo.
+
+Observação: O aplicativo requer uma conexão com a internet para carregar as bibliotecas JavaScript do Bootstrap e do jQuery.```
+
+Certifique-se de adaptar as instruções ao seu próprio projeto, fornecendo detalhes relevantes para que outras pessoas possam construir e executar o aplicativo em um contêiner Docker.
+
 <h2>Contribuindo</h2>
 Este projeto está aberto a contribuições da comunidade. Caso queira contribuir, basta fazer um fork do repositório, fazer as suas alterações e enviar um pull request. Faremos a revisão das suas alterações e, se estiverem de acordo com as diretrizes do projeto, elas serão incorporadas ao código principal.
 Também agradecemos a contribuição de patrocinadores, que podem entrar em contato via email devops.davi@gmail.com para colaborar com o projeto, seja com pequenas doações para obter o projeto com mais recursos e funcionalidades ou para desenvolvimento personalizado para empresas e clientes. Agradecemos antecipadamente a todos que se interessam em ajudar a melhorar este projeto.
