@@ -47,6 +47,7 @@ Para remover um item da tabela, clique no botão "Remover" na linha corresponden
 Os itens adicionados na tabela serão salvos na memória local do navegador e persistirão mesmo após o fechamento do navegador.
 Abaixo estão as imagens de ilustração do projeto:
 
+<h2>para logar, usuário admin@admin senha: admin</h2>
 <img src="img/intro1.PNG">
 <img src="img/introIndex.PNG">
 
