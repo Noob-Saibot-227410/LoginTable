@@ -1,0 +1,10 @@
+Padrão MVC (Model-View-Controller)
+
+O padrão MVC divide a aplicação em três componentes principais: o Model, que contém a lógica de negócios e os dados da aplicação, a View, que exibe as informações para o usuário, e o Controller, que atua como intermediário entre o Model e a View e gerencia as interações do usuário.
+
+No contexto do projeto, podemos aplicar o padrão MVC da seguinte forma:
+
+Model: O arquivo employees.js contém a lógica de negócios e os dados da tabela, incluindo as funções para adicionar e remover linhas, e salvar e restaurar dados na memória local.
+View: Os arquivos index.html e employees.html contêm a interface do usuário que exibe os dados da tabela e o formulário de login.
+Controller: O arquivo employees.js atua como o controlador, gerenciando as interações do usuário e fazendo a interface entre a View e o Model. Ele é responsável por adicionar e remover linhas da tabela, salvar e restaurar dados na memória local e lidar com as interações do usuário.
+Com o padrão MVC, o código fica mais organizado e fácil de manter, além de facilitar a adição de novas funcionalidades no futuro.

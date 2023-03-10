@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="img/davi-logo.png">
+  <meta charset="utf-8" />
+  <title>tabela de cadastros</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/employees-active.js"></script>
+</head>
+<body style="background-image: url('img/hack.jpg');">
+  <header style="text-align: center;">
+    <div class="logo">
+      <img src="img/davi-logo.png"/>
+      <h3>TABELA DE CADASTRO</h3>
+    </div>
+  </header>
+  <main>
+    <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+      <button type="button" id="addButton" style="display: block; margin-bottom: 10px; text-align: center;">Adicionar Linha</button>
+      <table id="tableFields"> 
+        <thead>
+          <tr>
+            <th>NOME</th>
+            <th>CARGO</th>
+            <th>SKILLS</th>
+            <th>EMPRESA</th>
+            <th>ENTRADA</th>
+            <th>SAIDA</th>
+            <th>TEM CERTIFICAÇÃO?</th>
+            <th>REMOVER?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td contenteditable="true">John Doe</td>
+            <td contenteditable="true">Developer</td>
+            <td contenteditable="true">Java, Python, SQL</td>
+            <td contenteditable="true">Project X</td>
+            <td contenteditable="true">2021-01-01</td>
+            <td contenteditable="true">2021-12-31</td>
+            <td><input type="checkbox" class="awsCertificate" /></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <button type="button" id="exitButton" style="position: absolute; right: 10px; top: 10px;">Deslogar</button>
+    </div>
+  </main>
+</body>
+</html>
