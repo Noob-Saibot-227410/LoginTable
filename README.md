@@ -1,4 +1,8 @@
-<h1>Projeto LoginTable</h1>
+<div style="display:flex; align-items:center;">
+  <h1 style="margin-right: 20px;">LoginTable!</h1>
+  <img src="https://drive.google.com/file/d/1D_F88e3pYhnT4jjCl0X6J8cHtJyl_r0a/view?usp=share_link" alt="Imagem de exemplo" width="100" height="100">
+</div>
+
 
 <h2>Descrição</h2>
 
