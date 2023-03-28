@@ -12,7 +12,8 @@ form.addEventListener('submit', function(event) {
 
    const isFirstTime = localStorage.getItem('isFirstTime');
 
-   if ((email === 'davi@davi' && password === 'davi') || (email === 'admin@admin' && password === 'admin')) {
+   if ((email === 'jose.sawada@datarain.com.br' && password === 'datarain') || 
+   (email === 'francisco.silva@datarain.com.br' && password === 'datarain')) {
      if (isFirstTime === null) {
        localStorage.setItem('isFirstTime', 'false');
        alert('Welcome! This is your first time logging in.');

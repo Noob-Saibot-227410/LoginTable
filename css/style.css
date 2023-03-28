@@ -72,7 +72,7 @@ body {
  }
   
  #login-form {
-   background-color: #faf9f9;
+   background-color: #fcb024;
    padding: 60px;
    border-radius: 30px;
    display: flex;
@@ -87,8 +87,8 @@ body {
  #login-form input {
    padding: 10px;
    border: none;
-   background-color: #333;
-   color: #fff;
+   background-color: #faf7f7;
+   color: #0c0c0c;
    border-radius: 5px;
    margin: 5px 0 20px 0;
    width: 130%;
@@ -98,7 +98,7 @@ body {
    padding: 10px 20px;
    border: none;
    border-radius: 5px;
-   background-color: #333;
+   background-color: #31a11b;
    color: #fff;
    font-weight: bold;
    cursor: pointer;
@@ -119,11 +119,11 @@ body {
    font-family: Arial, sans-serif;
    font-size: 16px;
    line-height: 1.5;
-   background-color: #f5f5f5;
+   background-color: #f7f0f0;
  }
  
  header {
-   background-color: #8d8c65;
+   background-color: #fcfcfc;
    color: #fff;
    padding: 3px;
    display: flex;
@@ -161,6 +161,21 @@ body {
    background-color: #095e2c;
  }
  
+ #clearAll {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#clearAll:hover {
+  background-color: #1c638d;
+}
+
+
  #exitButton {
    padding: 10px 20px;
    border: none;
@@ -175,16 +190,21 @@ body {
  }
  
  table {
-   background-color: #f7f6f5;
+   background-color: #faab5b;
    color: #070000;
-   width: 100%;
+   width: 81%;
    border-collapse: collapse;
    margin-bottom: 20px;
+   max-height: 100px; /* definindo a altura máxima da tabela */
+   overflow-y: scroll; /* permitindo a rolagem vertical */
+   position: 0; /* fixando a posição da tabela na página */
+   /* bottom: 0; definindo a distância do fundo da página */
  }
+
  
  thead {
-   background-color: #8d8c65;
-   color: #070000;
+   background-color: #153a8a;
+   color: #fffdfd;
  }
  
  th,
@@ -194,11 +214,11 @@ body {
    border: 1px solid #ccc;
  }
  
- .awsCertificate {
+ /* .awsCertificate {
    transform: scale(1.5);
-   margin: 0 auto;
+   margin: 0 auto; 
    display: block;
- }
+ } */
  
  .removeButton {
    padding: 10px 20px;

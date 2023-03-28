@@ -54,6 +54,8 @@ Abaixo estão as imagens de ilustração do projeto:
 <h2>para logar, usuário admin@admin senha: admin</h2>
 <img src="img/intro1.PNG">
 <img src="img/introIndex.PNG">
+<img src="img/intro2Index.PNG">
+<img src="img/intro2.PNG">
 
 <h2>Uso com Dockerfile</h2>
 
