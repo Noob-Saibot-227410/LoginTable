@@ -152,13 +152,13 @@ body {
    padding: 10px 20px;
    border: none;
    border-radius: 5px;
-   background-color: #2ecc71;
+   background-color: #0e8314;
    color: #fff;
    cursor: pointer;
  }
  
  #addButton:hover {
-   background-color: #095e2c;
+   background-color: #515e09;
  }
  
  #clearAll {
@@ -175,6 +175,19 @@ body {
   background-color: #1c638d;
 }
 
+#csvDownload {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #db34a3;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#csvDownload:hover {
+  background-color: #1c638d;
+}
 
  #exitButton {
    padding: 10px 20px;

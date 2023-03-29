@@ -51,9 +51,6 @@ window.onload = function() {
     localStorage.setItem("tableData", table.innerHTML);
   });
 
-
-
-
  // add event listeners to the "Remove" buttons
 var removeButtons = document.getElementsByClassName("removeButton");
 for (var i = 0; i < removeButtons.length; i++) {
@@ -101,6 +98,43 @@ document.getElementById("clearAll").addEventListener("click", function() {
       localStorage.setItem("tableData", table.innerHTML);
     }
   });
+  
+
+
+// Seleciona o botão com o id "csvDownload"
+const csvDownloadButton = document.getElementById("csvDownload");
+
+// Adiciona um evento de clique ao botão
+csvDownloadButton.addEventListener("click", () => {
+  // Seleciona a tabela que será exportada
+  const table = document.getElementById("tabela");
+
+  // Cria um objeto de URL a partir dos dados da tabela
+  const csvURL = URL.createObjectURL(new Blob([tableToCSV(table)], {type: "text/csv"}));
+
+  // Cria um link para download
+  const downloadLink = document.createElement("a");
+  downloadLink.href = csvURL;
+  downloadLink.download = "tabela.csv";
+
+  // Simula um clique no link de download
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+});
+
+// Função que converte a tabela para o formato CSV
+function tableToCSV(table) {
+  const rows = table.querySelectorAll("tr");
+
+  return Array.from(rows, row => {
+    const columns = row.querySelectorAll("th,td");
+
+    return Array.from(columns, column => column.textContent).join(",");
+  }).join("\n");
+}
+
+
 
 // add event listener to the "Log In" button on the index page to load the data from LocalStorage
 document.getElementById("login-button").addEventListener("click", function() {

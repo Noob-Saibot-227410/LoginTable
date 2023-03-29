@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" type="image/x-icon" href="img/davi-logo.png">
+  <link href="https://www.datarain.com.br/wp-content/themes/datarain/images/favicon.png" rel="shortcut icon">
   <meta charset="utf-8" />
   <title>tabela de cadastros</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/employees-active.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </head>
 <body style="background-image: url('img/hack.jpg');">
   <header style="text-align: center;">
@@ -18,6 +19,7 @@
     <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
       <button type="button" id="addButton" style="display: block; margin-bottom: 10px; text-align: center;">Adicionar Linha</button>
       <button type="button" id="clearAll" style="display: block; margin-bottom: 10px; text-align: center;">Clear All</button>
+      <button type="button" id="csvDownload" style="display: block; margin-bottom: 10px; text-align: center;">CSV</button>
       <table id="tableFields">
         <thead>
           <tr>
