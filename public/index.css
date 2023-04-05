@@ -1,0 +1,203 @@
+/* Specific styles for index.html */
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+   
+  .logo img {
+    max-width: 80%;
+    height: auto;
+  }
+   
+  #login-form {
+    background-color: #f09f36;
+    padding: 60px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   
+  #login-form label {
+    margin: 20px 20;
+  }
+   
+  #login-form input {
+    padding: 10px;
+    border: none;
+    background-color: #faf7f7;
+    color: #0c0c0c;
+    border-radius: 5px;
+    margin: 5px 0 20px 0;
+    width: 130%;
+  }
+  
+  
+  /* Specific styles for employees-active.html */
+ 
+ /* Reset default browser styles */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  Global styles
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f7f0f0;
+  }
+  
+  header {
+    background-color: #fcfcfc;
+    color: #fff;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #addButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0e8314;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #addButton:hover {
+    background-color: #515e09;
+  }
+  
+  #clearAll {
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   background-color: #3498db;
+   color: #fff;
+   cursor: pointer;
+   margin-left: 10px;
+ }
+ 
+ #clearAll:hover {
+   background-color: #1c638d;
+ }
+ 
+ #csvDownload {
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   background-color: #db34a3;
+   color: #fff;
+   cursor: pointer;
+   margin-left: 10px;
+ }
+ 
+ #csvDownload:hover {
+   background-color: #1c638d;
+ }
+ 
+  #exitButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #exitButton:hover {
+    background-color: #c0392b;
+  }
+  
+  table {
+    background-color: #aca39c;
+    color: #070000;
+    width: 81%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    /* max-height: 100px; definindo a altura máxima da tabela */
+    /* overflow-y: fixed; permitindo a rolagem vertical */
+    /* position: 0; fixando a posição da tabela na página */
+    /* bottom: 0; definindo a distância do fundo da página */
+  }
+ 
+  
+  thead {
+    background-color: #350b2a;
+    color: #fffdfd;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  /* .awsCertificate {
+    transform: scale(1.5);
+    margin: 0 auto; 
+    display: block;
+  } */
+  
+  
+  /* Media query for smaller screens */
+  @media (max-width: 767px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo img {
+      margin-bottom: 10px;
+    }
+  
+    #addButton,
+    #exitButton {
+     display: block;
+     margin-bottom: 10px;
+    }
+  }
+  
+
+form button[type="submit"] {
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #4cb133;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo dos botões quando hover */
+  button:hover, form button[type="submit"]:hover {
+    background-color: #286090;
+  }

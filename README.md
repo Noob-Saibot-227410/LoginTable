@@ -56,6 +56,9 @@ Abaixo estão as imagens de ilustração do projeto:
 <img src="img/introIndex.PNG">
 <img src="img\intro2Index.png">
 <img src="img\intro2.png">
+<img src="img\intro3.png">
+<img src="img\intro3Index.png">
+
 
 <h2>Uso com Dockerfile</h2>
 

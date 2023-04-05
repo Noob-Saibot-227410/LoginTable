@@ -17,9 +17,9 @@ form.addEventListener('submit', function(event) {
      if (isFirstTime === null) {
        localStorage.setItem('isFirstTime', 'false');
        alert('Welcome! This is your first time logging in.');
-       window.location.href = 'employees-active.html';
+       window.location.href = 'table.html';
      } else {
-       window.location.href = 'employees-active.html';
+       window.location.href = 'table.html';
      }
    } else {
      alert('E-mail ou senha inválida, favor coloque o email ou senha certa para login');

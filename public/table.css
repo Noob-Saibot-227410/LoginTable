@@ -1,0 +1,82 @@
+/* Estilo geral */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+/* Estilo do header */
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #f09f36;
+  height: 100px;
+  padding: 0 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header img {
+  height: 80px;
+  margin-right: 20px;
+}
+
+header h1 {
+  color: #8a1818;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Estilo dos botões */
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 18px;
+  background-color: #f09f36;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo dos botões quando hover */
+button:hover {
+  background-color: #286090;
+}
+
+/* Estilo da tabela */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo das células da tabela */
+td, th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilo das células do cabeçalho da tabela */
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #f09f36;;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estilo dos botões posicionados lado a lado */
+#saveTable, #addButton, #saveStatus {
+  display: inline-block;
+}
+
+/* Estilo da tabela centralizada */
+table {
+  margin-top: 30px;
+}

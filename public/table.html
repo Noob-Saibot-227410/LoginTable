@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://www.datarain.com.br/wp-content/themes/datarain/images/favicon.png" rel="shortcut icon">
+	<title>Employees</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body style="background-image: url('fundo1.jpg');">
+	<header>
+		<img src="logo.png" alt="Header Image">
+		<h2>Employees Users</h2>
+		<button type="button" id="exitButton" style="background-color: red; position: absolute; right: 10px; top: 10px;">Logout</button>
+	</header>
+	<br>
+	<br>
+	<br>
+	<button id="saveTable" onclick="downloadCSV()">Export csv</button>
+    <button id="addButton">Add</button>
+    <button id="saveStatus">Save</button>
+
+    <br>
+	<table id="tableFields">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Skills</th>
+				<th>Project</th>
+				<th>Start Date</th>
+				<th>End Date</th>
+				<th>Delete?</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+    <script src="table.js"></script>
+</body>
+</html>
