@@ -52,10 +52,6 @@ Os itens adicionados na tabela serão salvos na memória local do navegador e pe
 Abaixo estão as imagens de ilustração do projeto:
 
 <h2>para logar, usuário admin@admin senha: admin</h2>
-<img src="img/intro1.PNG">
-<img src="img/introIndex.PNG">
-<img src="img\intro2Index.png">
-<img src="img\intro2.png">
 <img src="img\intro3.PNG">
 <img src="img\intro3Index.PNG">
 
